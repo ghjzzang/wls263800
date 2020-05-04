@@ -1,0 +1,120 @@
+		
+		<div id="header">
+<div class="inner">
+    <div class="topArea">
+         <h1 module="Layout_LogoTop">            
+            <a href="/index.html"><img src="/web/img/Montblanc_logo.png"></a>
+         </h1>		
+		
+		<!--카테고리-->
+		<ul id="gnb">
+			<li><a href="#none" class="d1">Collection</a>
+			    <div class='d2'>
+				   <ul>
+					    <li><a href=''>1858 컬렉션</a></li>
+					    <li><a href=''>헤리티 컬렉션</a> </li>
+					    <li><a href=''>스타 레거시</a> </li>
+					    <li><a href=''>몽블랑 4810</a> </li>
+					    <li><a href=''>서밋 스마트워치</a> </li>
+					    <li><a href=''>트래디션 컬렉션</a> </li>
+					    <li><a href=''>타임워커 컬렉션</a> </li>
+					   <li><a href=''>보헴</a>  </li>
+					   
+					</ul>
+				</div>
+			
+			</li>
+			
+			<li>
+				<a href="#none" class="d1">Movement</a>
+				<div id="category" module="Layout_category" class='d2'>
+					<!--@css(/css/module/layout/category.css)-->
+					<!--@js(/js/module/layout/category.js)-->
+					
+					<div class="position">
+						<ul>						
+							<li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+							<li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+							<li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+						</ul>
+					</div>
+				</div>
+			 </li>
+			 <li><a href="/shopinfo/lookbook.html" class="d1">Story</a></li>
+			 <li>
+				 <a href="#none" class="d1">Community</a>
+				 <div module="Layout_BoardInfo" class='d2'>
+					<ul>
+						<li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+						<li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+					</ul>
+				</div>
+			 </li>
+		</ul>		
+		<!--//카테고리-->		
+		
+		<!--로그인-->		  
+    <ul module="Layout_statelogoff" id="utilMenu">        
+        <li><a href="/member/login.html">LOGIN</a></li>
+		<li>
+		   <a href="#none"><i class="fas fa-lock-open"></i></a>
+		   <div module="Layout_SearchHeader" id="shopSearch">           
+            <!--
+                $product_page=/product/detail.html
+                $category_page=/product/list.html
+            -->
+            <fieldset>
+                <legend>검색</legend>
+                {$form.keyword}<input type="image" src="//img.echosting.cafe24.com/skin/base/layout/btn_search.gif" alt="검색" onclick="{$action_search_submit}" /></fieldset>
+            </div>		
+		</li>
+		<li>
+			<a href="#none">My Page</a>
+		    <div>
+					<ul>
+						<li><a href="/member/join.html">회원가입</a></li>
+						<li><a href="/myshop/order/list.html">주문조회</a></li>
+						<li><a href="/myshop/index.html">마이쇼핑</a></li>
+						<li><a href="/board/index.html">게시판</a></li>
+					</ul>
+			</div>
+		</li>
+		<li><a href="/order/basket.html">Basket <span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a></li>
+    </ul>
+		
+    <ul module="Layout_stateLogon" id="utilMenu">
+        <li><a href="{$action_logout}">LOGOUT</a></li>
+		<li>
+			
+			
+		   <a href="#none"><i class="fas fa-search"></i></a>
+		   <div module="Layout_SearchHeader" id="shopSearch">           
+            <!--
+                $product_page=/product/detail.html
+                $category_page=/product/list.html
+            -->
+            <fieldset>
+                <legend>검색</legend>
+                {$form.keyword}<input type="image" src="//img.echosting.cafe24.com/skin/base/layout/btn_search.gif" alt="검색" onclick="{$action_search_submit}" /></fieldset>
+            </div>		
+		</li>
+		<li>
+			<a href="#none"><i class=""></i></a>
+		  <div>
+					<ul>
+						<li><a href="/member/modify.html">회원정보수정</a></li>
+						<li><a href="/myshop/order/list.html">주문조회</a></li>
+						<li><a href="/myshop/index.html">마이쇼핑</a></li>
+						<li><a href="/board/index.html">게시판</a></li>
+					</ul>
+			</div>
+		</li>
+		<li><a href="/order/basket.html">장바구니 <span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a></li>        
+    </ul>
+
+		  	
+		<!--//로그인-->
+        
+    </div>    
+</div>
+</div>
